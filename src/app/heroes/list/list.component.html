@@ -1,0 +1,20 @@
+<h3>Hero List!</h3>
+
+<h3>
+    Erased hero
+    <small class="text-danger"></small>
+</h3>
+<h3>No one is been erased</h3>
+
+<button 
+    class="btn btn-danger" 
+    (click)="removeLastHero()"
+>    
+    Erase last hero
+</button>
+
+<ul class="mt-2 list-group">
+    <li class="list-group-item" *ngFor="let hero of heroNames">
+        {{hero}}
+    </li>
+</ul>
